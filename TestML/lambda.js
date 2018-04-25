@@ -6,8 +6,8 @@ exports.handler = function (event, context, callback) {
 		PredictEndpoint: 'https://realtime.machinelearning.us-east-1.amazonaws.com',
 		Record: {
 			age: 32.0,
-			job: services,
-			marital: divorced
+			job: "services",
+			marital: "divorced"
 		}
 	}, function (err, data) {
 		if (err) console.log(err, err.stack); // an error occurred
@@ -15,5 +15,5 @@ exports.handler = function (event, context, callback) {
 	});
 
 
-	// callback(null, 'Successfully executed');
+	callback(null, 'Successfully executed');
 }
