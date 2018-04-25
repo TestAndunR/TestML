@@ -5,7 +5,7 @@ exports.handler = function (event, context, callback) {
 		MLModelId: 'ml-DYPsae14K89',
 		PredictEndpoint: 'https://realtime.machinelearning.us-east-1.amazonaws.com',
 		Record: {
-			age: 32.0,
+			age: "32.0",
 			job: "services",
 			marital: "divorced"
 		}
