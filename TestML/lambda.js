@@ -1,6 +1,7 @@
 let AWS = require('aws-sdk');
 const ml = new AWS.MachineLearning();
 exports.handler = function (event, context, callback) {
+	
 	ml.predict({
 		MLModelId: 'ml-DYPsae14K89',
 		PredictEndpoint: 'https://realtime.machinelearning.us-east-1.amazonaws.com',
